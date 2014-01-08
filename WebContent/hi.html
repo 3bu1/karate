@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Draggable - Default functionality</title>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
+  <style>
+  #draggable,#draggable3,#draggable5 { width: 150px; height: 150px; padding: 0.5em; }
+  </style>
+  <script>
+  $(function() {
+	 $( "#draggable3" ).draggable({ containment: "#containment-wrapper", scroll: false });
+	  $( "#draggable5" ).draggable({ containment: "#containment-wrapper", scroll: false });
+  });
+  </script>
+</head>
+<body>
+ 
+<div >
+<div id="containment-wrapper" style="height:600px; width:600px; background:#F00;">
+  <div id="draggable3" class="draggable ui-widget-content">
+    <p>I'm contained within the box</p>
+  </div>
+ 
+  <div class="draggable ui-widget-content">
+    <p id="draggable5" >I'm contained within my parent</p>
+  </div>
+</div></div>
+ 
+</body>
+</html>

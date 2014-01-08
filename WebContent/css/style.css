@@ -1,0 +1,42 @@
+.header
+{
+width:1000px;
+margin:0px auto;
+position:absolute;
+top:100px;
+z-index:100;
+left:200px;
+}
+.ksk_menu
+{
+float:left;
+width:70%;
+text-align:right;
+}
+.logo
+{
+float:left;
+
+}
+.ksk_flash
+{
+width:100%; height:450px; margin:0px; padding:0px;z-index:1;position:absolute;
+}
+
+.ksk_menu_sub li,.ksk_menu_sub1 li{
+float:right;
+text-align:right;
+font-size:13px;
+}
+.ksk_menu_sub
+{
+background:;
+height:35px;
+}
+.ksk_menu_sub1
+{
+	background:url(images/white-bg-70.png) repeat;
+height:43px;
+
+}
+.clear{clear:both;}

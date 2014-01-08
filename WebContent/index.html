@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KARATE ACADEMY IN HYDERABAD</title>
+
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+@import url("style.css");
+</style>
+</head>
+
+<body>
+<div class="ksk_flash" align="center">
+<script type="text/javascript">
+
+/*** 
+    Simple jQuery Slideshow Script
+    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
+***/
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 3000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});
+
+</script>
+
+<style type="text/css">
+#slideshow {
+    position:relative;
+    height:450px;
+	-moz-box-shadow: 0px 3px 5px #888;
+-webkit-box-shadow: 0px 3px 5px #888;
+box-shadow: 0px 3px 5px #999;
+}
+
+#slideshow IMG {
+	position:absolute;
+	top:0px;
+	left:-2px;
+	z-index:8;
+	opacity:1.0;
+width:100%;
+height:450px;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}
+
+</style>
+<div id="slideshow"> 
+<div>
+    <img src="images/ksk-Head-4.jpg" border="0" >
+    <img src="images/ksk-Head-2.jpg" border="0" class="active" >
+    <img src="images/ksk-Head-3.jpg" border="0" >
+</div>
+</div>
+<!--<div style="position:absolute;top:250px;left:14%;padding:10px 0 10px 2%; background:#FFF;opacity:0.5; font-size:30px;color:#333;width:80%;text-align:left; z-index:999999;text-transform:uppercase;">Kanka sports budokan karate Academy</div>-->
+</div>
+<div class="clear"></div>
+<div class="ksk_main">
+<div class="header">
+<div class="logo"><img src="images/K S K.png" width="200" height="200" /></div>
+<div class="ksk_menu">
+    <div class="ksk_menu_sub">
+      <ul>
+      <li style="margin-top:7px;float:left;margin-right:70px;"><a class="fb-icon" target="_blank" href="#"><span></span></a>
+      <a class="flickr-icon" target="_blank" href="#"><span></span></a>
+       <a class="twitter-icon" target="_blank" href="#"><span></span></a> 
+       <a class="youtube-icon" target="_blank" href="#"><span></span></a>
+       </li>
+       <li><a href="#">GALLERY</a></li>
+        <li ><a href="#">TESTIMONIALS</a></li>
+        <li ><a href="#">FAQS</a></li>
+        <li ><a href="#">About Us</a></li>
+        <li ><a href="#">CONTACT US</a></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+    <div class="ksk_menu_sub1">
+      <ul >
+        <li ><a href="#">HOME</a></li>
+        <li ><a href="#">NEWS</a></li>
+        <li ><a href="#">MARTIAL ARTS </a>
+        <ul>
+        <li><a href="">Karate</a></li>
+        <li><a href="">Kung fu</a></li>
+        <li><a href="">thai chi</a></li>
+        <li><a href="">tae-kwon-do</a></li>
+        <li><a href="">yogic Karate</a></li>
+        <li><a href="">Physical fitness</a></li>
+           <li><a href="">weapon art</a></li>
+        
+        
+         
+          
+        </ul>
+        </li>
+        <li><a href="#">TIMETABLE</a></li>
+        <li><a href="#">INSTRUCTORS</a></li>
+        <li><a href="#">Programs </a>
+        <ul>
+        <li><a href="">Corporate training</a></li>
+        <li><a href="">Personal training</a></li>
+        <li><a href="">Summer camps</a></li>
+        <li><a href="">Karate for Orphans</a></li>
+        <!--<li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>-->
+        </ul>
+        </li>
+        <li><a href="#">Awards</a></li>
+        <li><a href="#">Class map</a></li>
+      </ul>
+    </div>
+  </div></div>
+  <div class="ksk_body clear">
+  <div class="clear">
+				<div class="fleft">
+					<h2 class="calendar"><a href="#">Click here to view & download the <strong>KKS Timetable</strong></a></h2>
+				</div>
+				<div class="fright">
+					<h2 class="gear"><a href="#">Click here for A <strong>Free First Class</strong></a></h2>
+					</a></div>
+			</div>
+            <div class="clear"></div>
+<div class="martialarts">
+<div class="timetable">
+				<div class="image imghover"><a href="#"><img width="139" height="105" src="images/boxingv1.jpg" class="attachment-full" alt="boxingv1" /></a></div>
+				<a class="caplink" href="#"><div class="captext">karate</div></a> 
+			</div>
+            <div class="timetable"  >
+				<div class="image imghover"><a href="#"><img width="139" height="105" src="images/timetable-2.jpg" class="attachment-full" alt="timetable-2" /></a></div>
+				<a class="caplink" href="#"><div class="captext">Muay Thai</div></a> 
+			</div>
+						<div class="timetable"  >
+				<div class="image imghover"><a href="#"><img width="139" height="105" src="images/BJJ.jpg" class="attachment-full" alt="boxingv1" /></a></div>
+				<a class="caplink" href="#"><div class="captext">kick Boxing</div></a> 
+			</div>
+						<div class="timetable" >
+				<div class="image imghover"><a href="#"><img width="139" height="105" src="images/mma.jpg" class="attachment-full" alt="mma" /></a></div>
+				<a class="caplink" href="#"><div class="captext">Kung fu</div></a> 
+			</div>
+						<div class="timetable"  >
+				<div class="image imghover"><a href="#"><img width="139" height="105" src="images/Wrestlingv1.jpg" class="attachment-full" alt="Wrestlingv1" /></a></div>
+				<a class="caplink" href="#"><div class="captext">Wrestling</div></a> 
+			</div>
+						<div class="timetable" style='margin-right: 0' >
+				<div class="image imghover"><a href="#"><img width="139" height="105" src="images/sandc.jpg" class="attachment-full" alt="sandc" /></a></div>
+				<a class="caplink" href="#"><div class="captext">Strength & Conditioning</div></a> 
+			</div>
+            <script>
+            jQuery('.timetable').hover(function(){
+		jQuery(".caplink", this).stop().animate({height:'70px','padding-top':'35px'},{queue:false,duration:160});
+	}, function() {
+		jQuery(".caplink", this).stop().animate({height:'33px','padding-top':'0'},{queue:false,duration:160});
+	});
+
+            </script>
+            </div>
+            <div class="clear"></div>
+<div id="wrapper" class="container_12" style="overflow: hidden !important;margin-top:40px;">		<!-- The class "grid_7" restricts the div to 7 columns wide -->
+		<div class="col_1">
+			<ul>
+			<!--<li id="juiz_last_tweet_widget-2" class="widget juiz_last_tweet_widget">
+				<div class="juiz_last_tweet_inside juiz_ltw_user_KKS4EVER">
+					<ul class="juiz_last_tweet_tweetlist">
+						
+								<li class="juiz_last_tweet_item jltw_item_alone">
+									
+									<span class="juiz_lt_content">Heading back to London after the Brighton Open BJJ  <a href="#" rel="nofollow" class="juiz_last_tweet_url" target="_self">t.co/SYlyY8J4Is</a></span>
+									<span class="juiz_last_tweet_footer_item">
+										<em class="juiz_last_tweet_inner juiz_last_tweet_metadata">Time ago <a href="#" target="_self" title="See the status">9 Days</a> <span class="juiz_ltw_source">via <a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a></span></em>
+										
+									</span>
+								</li>
+							
+					</ul>
+			
+				</div>
+			</li>--><li id="text-2" class="widget widget_text">			<div class="textwidget"><div class="dl-timetable">
+<a href="#">Class <strong>Timetable</strong></a>
+</div></div>
+		</li><li id="text-3" class="widget widget_text">			<div class="textwidget"><div class="joinus">
+<a href="#">Join <strong>Us</strong></a>
+</div>
+<div class="training">
+<a href="#">Personal <strong>Training</strong></a>
+</div>
+</div>
+		</li><li id="text-9" class="widget widget_text">			<div class="textwidget"><div id="intouch">
+	<h3>Stay in <strong>touch</strong></h3>
+	Sign up to our Team KKS monthly Newsletter and receive info on upcoming events and the latest news from the mat.
+  	<form onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=StefanoDutti', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" target="popupwindow" method="post" action="http://feedburner.google.com/fb/a/mailverify?uri=XXXXXX">
+		<div class="input"><input class="username"  type="text" placeholder="Name" name="username" ></div>
+		<div class="input"><input class="email_address" placeholder="Email Address" type="text" name="email" ></div>
+		<input type="hidden" name="uri" value="StefanoDutti">
+		<input type="hidden" value="en_US" name="loc">
+		<div class='submit'><button type="submit">Send</button></div>
+  	</form>
+</div></div>
+		</li>			</ul>
+		</div>
+		<div id="content" class="col_2">
+						<div class="post" id="post-81">
+			<h2 style="color: #CC0000" >Welcome to the Kanka karate Academy!</h2>
+				<div class="entry">
+					<p><span class="orange">The Kanka karate Academy is an amazing martial arts gym based 5 minutes away from <strong>Old Street Station </strong>and within close proximity to Angel, Moorgate and Liverpool Street tube/train Stations.  </span></p>
+<p>We work with everyone from complete beginners to professional fighters and pride ourselves on our knowledgeable instructors and fantastic students.</p>
+<p>If you train with us, you'll gain some serious skills and some great friends along the way. Many talented people are involved in the team but, no matter what your ability, everybody treats each other with respect. We train hard together, not against each other.</p>
+<p>Alongside our regular classes, we also arrange a great range of seminars with world-renowned fighters such as Kamal Shalorus, Wanderlei Silva, Fernando Tererê and Ricardo Vieira.</p>
+<p>Our contact details are at the bottom of this page, so if you&#8217;ve got any questions, comments or want to book a free trial class please get in touch.</p>
+<p>We hope to see you soon!</p>
+<p>&nbsp;</p>
+<h2 class="gear-white"><a title="Apply for Free First Class" href="#">Click here for A <strong>Free First Class</strong></a></h2>
+									</div><!-- end entry -->
+			</div><!-- end post -->
+								</div><!-- end content -->
+	<!-- The class "grid_4" sets the sidebar to be 4 columns wide and "prefix_1" sets one empty column before the sidebar for spacing -->
+<div id="sidebar" class="col_3">
+	<ul>
+		<li id="text-4" class="widget widget_text">			<div class="textwidget"><div id="contact_sidebar">
+<h3>Get in <strong>touch</strong></h3>
+
+<p>Comments or questions are welcome.</p>
+<!-- Fast Secure Contact Form plugin 3.1.5.5 - begin - FastSecureContactForm.com -->
+<div id="FSContact3" style="width:375px;">
+<form action="#" id="si_contact_form3" method="post">
+<div  class="required" style="text-align:left;">
+<span> *</span>(denotes required field)
+   </div>
+
+         <div>
+               <input type="hidden" name="si_contact_CID" value="1" />
+        </div>
+
+        <div style="text-align:left; padding-top:5px;">
+                <label for="si_contact_name3">Name:<span class="required"> *</span></label>
+        </div>
+        <div style="text-align:left;">
+                <input style="text-align:left; margin:0;" type="text" id="si_contact_name3" name="si_contact_name" value="Name"  size="40" />
+        </div>
+
+        <div style="text-align:left; padding-top:5px;">
+                <label for="si_contact_email3">E<span class="required"> *</span></label>
+        </div>
+        <div style="text-align:left;">
+                <input style="text-align:left; margin:0;" type="email" id="si_contact_email3" name="si_contact_email" value="Email Address"  size="40" />
+        </div>
+
+        <div style="text-align:left; padding-top:5px;">
+                <label for="si_contact_message3">Message:<span class="required"> *</span></label>
+        </div>
+        <div style="text-align:left;">
+                <textarea style="text-align:left; margin:0;" id="si_contact_message3" name="si_contact_message"  cols="25" rows="5">Message</textarea>
+        </div>
+        <div style="text-align:left; padding-top:5px;">
+                <label for="si_contact_message3">Message:<span class="required"> *</span></label>
+        </div>
+<div style="text-align:left; padding-top:2px;">
+  <input type="submit" id="fsc-submit-3" style="cursor:pointer; margin:0;" value="Submit" /> 
+</div>
+
+</form>
+</div>
+<!-- Fast Secure Contact Form plugin 3.1.5.5 - end - FastSecureContactForm.com --> 
+</div></div>
+		</li><li id="text-10" class="widget widget_text">
+        <div id="map">
+<h3>Visit <strong>kanka sports Budokan karate academy</strong></h3>
+<p><a href="http://www.google.com/mapmaker?iwloc=0_0&fmi=0_0&gw=55&editids=hopemKsR172wUt1oId&dtab=overview&ll=17.364985,78.553767&spn=0.001239,0.002291&t=h&z=19&lyt=large_map_v3"><img src="images/google_maps1.png" width="100%" height="" /></a></p>
+</div>
+<div> <span class="orange" style="font-size:13px;"><strong>kanka sports Budokan karate academy</strong>,<br />
+Road Number 14
+Alkapuri,LB Nagar,
+Hyderabad,
+Andhra Pradesh500035</span>
+</div>
+</li>	</ul>
+</div><!-- end sidebar -->
+<div class="clear">&nbsp;</div>
+</div>
+<div class="clear"></div>
+<div class="new-events clearfix">
+	<div class="container_12">
+		<div class="grid_12">
+			<h2>News &amp; Upcoming <strong>Events</strong></h2>
+						<div class="items"   >
+				<div class="photo"><img width="295" height="186" src="images/No-gi-small.jpg" class="attachment-full" alt="No gi - small" /></div>
+				<div class="details">
+					<h3>Fusion MMA Fighting Championship</h3>
+					<p class="desc">
+						Three of our MMA students: Aaron, Geoff and Pat will be fighting at Fusion Fighting Championship on Saturday 7 September at Epsom Downs Racecourse. Tickets are on sale at London&hellip;						<a class="readmore" href="#">read more</a>					
+					</p>
+				</div>
+			</div>
+						<div class="items"   >
+				<div class="photo"><img width="295" height="186" src="images/EasterEggs2.jpg" class="attachment-full" alt="EasterEggs2" /></div>
+				<div class="details">
+					<h3>Easter 2013 &#8211; changes to timetable</h3>
+					<p class="desc">
+						Hi all, Here's some more information on our classes over the Easter holiday. On Friday 29 March there will be - One Mixed BJJ class and One Mixed Muay Thai&hellip;						<a class="readmore" href="#">read more</a>					
+					</p>
+				</div>
+			</div>
+						<div class="items"  style='margin-right: 0' >
+				<div class="photo"><img width="295" height="186" src="images/Renan.jpg" class="attachment-full" alt="Renan" /></div>
+				<div class="details">
+					<h3>Sandeep &#8211; Indian National Champion</h3>
+					<p class="desc">
+						We all just wanted to say thanks to Renan Barao - UFC Interim Bantamweight Champion for spending time at Kanka karate Academy this week. It's been emotional! &nbsp;						<a class="readmore" href="#">read more</a>					
+					</p>
+				</div>
+			</div>
+						
+		</div>
+	</div>
+</div>
+
+  </div>
+  </div>
+  <div class="clear"></div>
+<div id="footer">
+		<!-- The class "container_12" restricts the grid to 12 columns and a total of 960px wide -->
+		<div class="container_12">
+			<div class="grid_12 MB30">
+				<img style="vertical-align:middle" width="150" src="images/K S K.png" alt="Kanka karate Academy Logo">  
+				 <strong style="float:right;margin-top:80px;">Contact us using your preferred method below</strong>
+			</div>
+			<div class="grid_3"><div class="item"><h3 class="sub">Kanka karate Academy</h3>			<div class="textwidget"><strong>Email:</strong>
+<br/>
+Please contact Kanka raju at: <a href="#" class="orange">info@kankasports.com</a>
+<br/>
+<br/>
+
+<strong>Phone:</strong>
+<br/>
+call kanka Raju on: 09346127174
+<br/>
+<br/> 
+</div>
+		</div></div>
+			<div class="grid_3"><div class="item"><div style="line-height:20px;">
+<h3 class="sub">Location:</h3>
+<br/>
+Kanka sports Budokan karate academy,<br />
+Road Number 14 Alkapuri,<br />
+LB Nagar, Hyderabad,<br />
+Andhra Pradesh.<br />
+pin code:500035.
+
+
+
+</div>
+		</div></div>
+			<div class="grid_3"><div class="item">			<div class="textwidget"><div class='follow-team clearfix'>
+<h3>Follow Team KKS</h3>
+<a class="fb-icon" target="_blank" href="#"><span></span></a>
+			<a class="flickr-icon" target="_blank" href="#"><span></span></a>
+			<a class="twitter-icon" target="_blank" href="#"><span></span></a>
+			<a class="youtube-icon" target="_blank" href="#"><span></span></a>
+</div></div>
+		</div></div>
+			
+			<!-- end footerContent -->
+		<div class="grid_12" style="margin-top:40px;"> Proudly Gifted by <a href="#" title="" class="orange">Tribhuvan</a> </div>
+		</div><!-- end container -->
+		<!-- This clears all floats -->
+		<div class="clear">&nbsp;</div>
+	</div>
+</body>
+</html>
